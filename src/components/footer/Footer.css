@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  margin-top: auto;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.footer-logo img {
+  height: 45px;
+  width: auto;
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin: 0.3rem 0;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.footer-address {
+  color: #ffffff  ;
+  line-height: 1.2;
+  margin: 0.3rem 0;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.footer-address p {
+  margin: 0.15rem 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-address strong {
+  font-weight: 600;
+}
+
+.footer-cin {
+  color: #ffffff;
+  margin: 0.3rem 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.footer-cin strong {
+  font-weight: 600;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.footer-nav a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-links svg {
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+}
+
+.footer-copyright {
+  color: #888888;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .footer-address,
+  .footer-tagline {
+    font-size: 0.8rem;
+  }
+} 

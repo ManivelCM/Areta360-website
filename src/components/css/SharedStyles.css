@@ -1,0 +1,95 @@
+/* Common container styles for all pages */
+.page-container {
+  padding-top: 60px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Header styles */
+.page-header {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  padding: 0 2rem;
+  margin-top: 30px;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Breadcrumb navigation styles */
+.company-text {
+  color: #9B9D9F;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.arrow {
+  color: #9B9D9F;
+  font-size: 0.8rem;
+  margin: 0 0.8rem;
+  opacity: 0.8;
+}
+
+.page-text {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Page content styles */
+.page-content {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  margin-top: 5rem;
+}
+
+/* Page title styles */
+.page-title {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Urbanist', sans-serif;
+  margin-top: -50px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .page-content {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: -50px;
+  }
+
+  .header-content {
+    padding: 0 1rem;
+  }
+} 

@@ -1,0 +1,546 @@
+.career-container {
+    padding-top: 82px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-image: url('../../assets/images/bg-img4.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* Create network effect using CSS */
+.career-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.career-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../../assets/images/Vector 5.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.career-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.career-header {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+.header-content {
+  display: flex;
+  padding: 0 2rem;
+  margin-top: 30px;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.company-text {
+    color: #9B9D9F;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: 'Urbanist', sans-serif;
+}
+  
+.career-header-content {
+    display: flex;
+    padding: 0 2rem;
+  }
+  
+.career-header-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+.career-text {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: 'Urbanist', sans-serif;
+}
+  
+.career-title-section {
+  text-align: center;
+  padding: 2rem 1rem 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.career-title-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.career-title-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #CCE6FF;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 4rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.benefit-icon {
+  margin-bottom: 1.5rem;
+}
+
+.benefit-icon img {
+  width: 60px;
+  height: 60px;
+  color: #007BFF;
+}
+
+.benefit-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #CCE6FF;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.career-cta {
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  border-radius: 16px;
+  margin: 2rem 4rem;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #CCE6FF;
+  margin-bottom: 2rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.join-us-btn {
+  background: #007BFF;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 0;
+  width: 200px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.join-us-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    padding: 0 2rem 3rem;
+  }
+
+  .career-cta {
+    margin: 2rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-title-section h1 {
+    font-size: 2rem;
+  }
+
+  .career-title-section p {
+    font-size: 1rem;
+  }
+
+  .benefit-card {
+    padding: 1.5rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+.career-content {
+  padding: 180px 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.page-title {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Urbanist', sans-serif;
+  margin-top:30px;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  opacity: 0.9;
+  line-height: 1.6;
+  font-family: 'Urbanist', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .career-content {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+    margin: 0.5rem 0.5rem 2rem 0.5rem;
+  }
+}
+
+.bottom-box {
+  width: 100%;
+  max-width: 1208px;
+  margin: -0.1rem auto 0;
+  height: 280px;
+  padding: 2rem 1rem;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  box-shadow: 0 0 50px #5357FF;
+}
+
+.bottom-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../../assets/images/Vector 6.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.box-content {
+  text-align: center;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.box-content h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 3;
+}
+
+.box-content p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Urbanist', sans-serif;
+  margin-top: -20px;
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.join-us-btn {
+  background: #007BFF;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 0;
+  width: 200px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.join-us-btn:hover {
+  background: #0056b3;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Left side cards */
+.benefit-card:nth-child(odd) {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+/* Right side cards */
+.benefit-card:nth-child(even) {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+.benefit-card:nth-child(1) { animation-delay: 0.2s; }
+.benefit-card:nth-child(2) { animation-delay: 0.2s; }
+.benefit-card:nth-child(3) { animation-delay: 0.4s; }
+.benefit-card:nth-child(4) { animation-delay: 0.4s; }
+.benefit-card:nth-child(5) { animation-delay: 0.6s; }
+.benefit-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Modal Styles */
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000000;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-box {
+  position: relative;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  z-index: 1000001;
+}
+
+.modal-box h2 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #cccccc;
+}
+
+.form-group input[type="file"] {
+  padding: 0.5rem;
+  border: 1px dashed #ffffff;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #cccccc;
+  font-size: 0.875rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0.5rem;
+  line-height: 1;
+  font-family: 'Urbanist', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .modal-box {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .modal-box h2 {
+    font-size: 1.5rem;
+  }
+} 
