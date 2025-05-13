@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* Breadcrumb navigation styles */
@@ -77,19 +78,59 @@
 }
 
 /* Responsive styles */
+@media (max-width: 1200px) {
+  .page-content {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  
+  .page-title {
+    font-size: 2.2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .page-content {
     width: 95%;
     padding: 1rem;
+    margin-top: 3rem;
   }
 
   .page-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
-    margin-top: -50px;
+    margin-top: -30px;
   }
 
   .header-content {
     padding: 0 1rem;
+  }
+
+  .header-text {
+    gap: 0.5rem;
+  }
+
+  .company-text,
+  .page-text {
+    font-size: 0.9rem;
+  }
+
+  .arrow {
+    margin: 0 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding: 0.8rem;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-content {
+    padding: 0 0.8rem;
   }
 } 

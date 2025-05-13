@@ -210,4 +210,69 @@
 .box-content {
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 3px #CACBCC
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 1.2rem;
+    margin: 1rem;
+  }
+
+  .modal-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .modal-description {
+    font-size: 0.8rem;
+  }
+
+  .form-group label {
+    font-size: 0.75rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .submit-button {
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .modal-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .check-icon {
+    width: 60px;
+    height: 40px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .submit-button {
+    height: 38px;
+    font-size: 0.85rem;
+  }
+
+  .status-message {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
 } 
