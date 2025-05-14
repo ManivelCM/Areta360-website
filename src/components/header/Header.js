@@ -79,13 +79,8 @@ const Header = () => {
               </ul>
             </li>
             <li>
-              <Link to="/products" onClick={() => setIsMenuOpen(false)}>
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link to="/career" onClick={() => setIsMenuOpen(false)}>
-                Career
+              <Link to="/careers" onClick={() => setIsMenuOpen(false)}>
+                Careers
               </Link>
             </li>
             <li>

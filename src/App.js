@@ -8,9 +8,9 @@ import Leadership from './components/js/Leadership';
 import Services from './components/js/Services';
 import Values from './components/js/Values';
 import Strategy from './components/js/Strategy';
-import Career from './components/js/Career';
+import Careers from './components/js/Careers';
 import Blog from './components/js/Blog';
-
+  
 function App() {
   return (
     <Router>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
           <Route path="/home" element={<HomeScreen />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/career" element={<Career />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/company/about" element={<AboutUs />} />
           <Route path='/company/leadership' element={<Leadership />} />
           <Route path='/company/services' element={<Services />} />
