@@ -28,7 +28,7 @@ const Footer = () => {
         <nav className="footer-nav">
           <Link to="/">Home</Link>
           <Link to="/about">About us</Link>
-          <Link to="/career">Career</Link>
+          <Link to="/careers">Careers</Link>
           <Link to="/blog">Blog</Link>
         </nav>
 
