@@ -62,10 +62,10 @@ const ApplicationForm = ({ isOpen, onClose }) => {
           resume: null,
           message: ''
         });
-        setTimeout(() => {
-          onClose();
+    setTimeout(() => {
+      onClose();
           setSubmitStatus(null);
-        }, 1500);
+    }, 1500);
       } else {
         setError(data.error || 'Error submitting application. Please try again.');
       }

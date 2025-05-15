@@ -58,7 +58,7 @@ const Header = () => {
               onMouseEnter={() => handleDropdownEnter('company')}
               onMouseLeave={handleDropdownLeave}
             >
-              <Link to="/company" onClick={() => setIsMenuOpen(false)}>
+              <Link to="/about" onClick={() => setIsMenuOpen(false)}>
                 Company
                 <svg 
                   width="10" 
