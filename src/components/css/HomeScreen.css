@@ -231,18 +231,30 @@ h1 {
 
 @media (max-width: 768px) {
   .testimonial {
-    flex-direction: column;
-    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
   }
-
   .nav-arrow {
-    transform: rotate(90deg);
+    transform: none !important;
+    margin: 0;
+    position: static;
+    top: auto;
+    left: auto;
   }
-
-  .nav-arrow:hover {
-    transform: rotate(90deg) scale(1.1);
+  .testimonial-content {
+    flex: 1;
   }
-
+  .nav-arrow.prev {
+    order: 0;
+    margin-right: 0.5rem;
+  }
+  .nav-arrow.next {
+    order: 2;
+    margin-left: 0.5rem;
+  }
   .author-image {
     width: 50px;
     height: 50px;
@@ -379,4 +391,58 @@ h1 {
 .testimonial-dot.active {
   background-color: #fff;
   transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .bottom-box {
+    width: 96%;
+    margin: 1.2rem auto 1.5rem auto;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+  }
+  .box-content {
+    background: #181c24;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 1.5rem 1rem 1.2rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    min-height: unset;
+    overflow: visible;
+  }
+  .box-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.9rem;
+    line-height: 1.35;
+    word-break: break-word;
+    color: #fff;
+    font-weight: 700;
+  }
+  .box-content p {
+    font-size: 1.02rem;
+    margin-bottom: 1.2rem;
+    max-width: 100%;
+    line-height: 1.6;
+    word-break: break-word;
+    white-space: normal;
+    color: #e0e0e0;
+  }
+  .box-content .custom-button {
+    width: 100%;
+    font-size: 1.08rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.8rem 0;
+    border-radius: 22px;
+  }
 }
