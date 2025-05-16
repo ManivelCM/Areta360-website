@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
 
 .footer {
-  background-color: #1a1a1a;
+  background-color: rgba(26, 26, 26, 1);
   color: #ffffff;
-  padding: 1.5rem 2rem;
+  padding: 16px 0 0 0;
   margin-top: auto;
   font-family: 'Urbanist', sans-serif;
 }
@@ -29,6 +29,127 @@
   margin: 0.3rem 0;
   font-weight: 600;
   letter-spacing: 0.05em;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-left {
+  flex: 1.2;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 4px;
+  margin-top: 18px;
+}
+
+.footer-brands {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-brands ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-brands li {
+  margin-bottom: 4px;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-columns > div {
+  margin-right: 20px;
+  min-width: 180px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columns li {
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.footer-columns a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-columns a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  font-size: 14px;
+  color: #fff;
+  padding: 8px 0 8px 0;
+  width: 100%;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-social a svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  vertical-align: middle;
+  fill: #fff;
+  transition: fill 0.2s;
+}
+
+.footer-social a:hover svg {
+  fill: #0077b5; /* LinkedIn blue or your brand color */
+}
+
+@media (max-width: 900px) {
+  .footer-main, .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-columns {
+    flex-direction: column;
+  }
+  .footer-columns > div {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .footer-bottom {
+    align-items: flex-start;
+  }
 }
 
 .footer-address {
@@ -157,48 +278,66 @@
 
 @media (max-width: 480px) {
   .footer {
-    padding: 1rem 0.8rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  }
+
+  .footer-main {
+    padding-bottom: 4px;
   }
 
   .footer-logo img {
-    height: 35px;
+    height: 22px;
   }
 
   .footer-tagline {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    margin: 0.2rem 0;
   }
 
   .footer-address p {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    margin: 0.05rem 0;
   }
 
   .footer-cin {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    margin: 0.1rem 0;
   }
 
-  .footer-nav {
-    gap: 0.8rem;
+  .footer-columns > div {
+    margin-bottom: 4px;
+    min-width: 100px;
   }
 
-  .footer-nav a {
-    font-size: 0.75rem;
+  .footer-columns h4 {
+    font-size: 0.85rem;
+    margin-bottom: 2px;
   }
 
-  .social-links {
-    gap: 0.6rem;
+  .footer-columns li,
+  .footer-columns a {
+    font-size: 0.65rem;
+    margin-bottom: 2px;
   }
 
-  .social-links a {
-    width: 26px;
-    height: 26px;
+  .footer-bottom {
+    padding: 6px 2px 6px 2px;
+    font-size: 0.65rem;
+    gap: 3px;
   }
 
-  .social-links svg {
-    width: 13px;
-    height: 13px;
+  .footer-social {
+    gap: 8px;
+  }
+
+  .footer-social a svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
   }
 
   .footer-copyright {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    margin-top: 0;
   }
 } 
