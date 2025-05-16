@@ -56,8 +56,8 @@ const adminTransporter = nodemailer.createTransport({
 const hrTransporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'hr@areta360.com',
-    pass: 'eroy enyk gsey zaxl'
+    user: process.env.HR_EMAIL_USER,
+    pass: process.env.HR_EMAIL_PASS
   }
 });
 

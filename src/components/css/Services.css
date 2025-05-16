@@ -193,6 +193,33 @@
   }
 }
 
+@media (max-width: 480px) {
+  .services-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .services-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1.2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-image img {
+    width: 80vw;
+    max-width: 220px;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+  .services-descriptions {
+    margin-top: 0;
+    gap: 1.2rem;
+  }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }

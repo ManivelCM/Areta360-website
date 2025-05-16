@@ -74,9 +74,9 @@
 
 .who-we-are-section {
   position: absolute;
-  left: 45%;
+  /*left: 45%;*/
   top: 260px;
-  transform: translateX(-50%);
+ /* transform: translateX(-50%);*/
   width: 80%;
   height: 250px;
   padding: 3rem;
@@ -128,9 +128,26 @@
 @media (max-width: 768px) {
   .image-container {
     width: 95%;
-    height: 500px;
+    height: 800px;
   }
+ 
+  .section-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: inline-block;
+    width: fit-content;
+    letter-spacing: 1px;
+    margin-left: 50px !important;
 
+}
+.aboutus-box-text {
+  display: inline-block;
+  text-align: left;
+  margin-left: 10px !important;
+}
   .who-we-are-section {
     width: 90%;
     padding: 2rem;

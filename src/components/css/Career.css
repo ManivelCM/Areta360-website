@@ -292,7 +292,7 @@
   width: 100%;
   max-width: 1208px;
   margin: -0.1rem auto 0;
-  height: 280px;
+  height: auto;
   padding: 2rem 1rem;
   border-radius: 0;
   position: relative;
