@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/icons/logo.png';
 import './Header.css';
 
@@ -7,6 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +31,11 @@ const Header = () => {
     setActiveDropdown(null);
   };
 
+  // Helper to check if a path is active
+  const isActive = (path) => location.pathname === path;
+  // Helper for dropdowns (matches start of path)
+  const isDropdownActive = (base) => location.pathname.startsWith(base);
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
@@ -48,7 +54,7 @@ const Header = () => {
         <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul>
             <li>
-              <Link to="/" onClick={() => setIsMenuOpen(false)}>
+              <Link to="/" onClick={() => setIsMenuOpen(false)} className={isActive('/') ? 'active-link' : ''}>
                 Home
                 <span style={{ width: '10px', height: '6px' }}></span>
               </Link>
@@ -58,7 +64,7 @@ const Header = () => {
               onMouseEnter={() => handleDropdownEnter('company')}
               onMouseLeave={handleDropdownLeave}
             >
-              <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+              <Link to="/about" onClick={() => setIsMenuOpen(false)} className={isDropdownActive('/company') || isActive('/about') ? 'active-link' : ''}>
                 Company
                 <svg 
                   width="10" 
@@ -71,20 +77,20 @@ const Header = () => {
                 </svg>
               </Link>
               <ul className={`dropdown-menu ${activeDropdown === 'company' ? 'active' : ''}`}>
-                <li><Link to="/company/about" onClick={() => setIsMenuOpen(false)}>About us</Link></li>
-                <li><Link to="/company/leadership" onClick={() => setIsMenuOpen(false)}>Leadership</Link></li>
-                <li><Link to="/company/services" onClick={() => setIsMenuOpen(false)}>Our Services</Link></li>
-                <li><Link to="/company/values" onClick={() => setIsMenuOpen(false)}>Our Values</Link></li>
-                <li><Link to="/company/strategy" onClick={() => setIsMenuOpen(false)}>Our Strategy</Link></li>
+                <li><Link to="/company/about" onClick={() => setIsMenuOpen(false)} className={isActive('/company/about') ? 'active-link' : ''}>About us</Link></li>
+                <li><Link to="/company/leadership" onClick={() => setIsMenuOpen(false)} className={isActive('/company/leadership') ? 'active-link' : ''}>Leadership</Link></li>
+                <li><Link to="/company/services" onClick={() => setIsMenuOpen(false)} className={isActive('/company/services') ? 'active-link' : ''}>Our Services</Link></li>
+                <li><Link to="/company/values" onClick={() => setIsMenuOpen(false)} className={isActive('/company/values') ? 'active-link' : ''}>Our Values</Link></li>
+                <li><Link to="/company/strategy" onClick={() => setIsMenuOpen(false)} className={isActive('/company/strategy') ? 'active-link' : ''}>Our Strategy</Link></li>
               </ul>
             </li>
             <li>
-              <Link to="/careers" onClick={() => setIsMenuOpen(false)}>
+              <Link to="/careers" onClick={() => setIsMenuOpen(false)} className={isActive('/careers') ? 'active-link' : ''}>
                 Careers
               </Link>
             </li>
             <li>
-              <Link to="/blog" onClick={() => setIsMenuOpen(false)}>
+              <Link to="/blog" onClick={() => setIsMenuOpen(false)} className={isActive('/blog') ? 'active-link' : ''}>
                 Blog
               </Link>
             </li>

@@ -2,12 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../../assets/icons/logo.png';
+import { SiMedium } from 'react-icons/si';
+import { FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer-main">
       <div className="footer-left">
-        <img src={logo} alt="Areta360 Logo" className="footer-logo" />
+        <img src={logo} alt="Areta360 Logo" className="footer-logo" style={{width: '110px'}} />
       </div>
       <div className="footer-columns">
         <div>
@@ -19,27 +21,26 @@ const Footer = () => (
             <li><Link to="/blog">Blog</Link></li>
           </ul>
         </div>
+       
         <div>
-          <h4>Values</h4>
+          <h4>Let's Connect</h4>
           <ul>
-            <li>Make customer Successful</li>
-            <li>Be Accountable</li>
-            <li>Deliver Excellence</li>
+            <li><a href="mailto:admin@areta360.com" style={{color: '#CACBCC'}}>Email: admin@areta360.com</a></li>
+            <li><a href="tel:+919980474080" style={{color: '#CACBCC'}}>Phone: +91 9980474080</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Our Location</h4>
           <ul>
-            <li>
-              Areta360 Technologies Private Limited, 1st floor,<br />
-              Prestige Tech Park, Mercury Block, Bellandur, Bangalore South,<br />
-              Karnataka, India, 560103
-            </li>
-            <li><strong>CIN :</strong> U62013KA2024PTC194221</li>
+            <li>Areta360 Technologies Private Limited, 1st floor,<br />
+            Prestige Tech Park, Mercury Block, Bellandur, Bangalore South,<br />
+            Karnataka, India, 560103</li>
+            <li style={{marginTop: '6px', color: '#CACBCC', fontSize: '10px'}}>CIN: U72900KA2024PTC123456</li>
           </ul>
         </div>
       </div>
     </div>
+    <hr className="footer-divider" />
     <div className="footer-bottom">
       <div className="footer-copyright">
         <p>Copyright © 2024 Areta360 Technologies Private Limited. All rights reserved.</p>

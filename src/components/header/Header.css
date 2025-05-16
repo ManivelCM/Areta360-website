@@ -15,7 +15,7 @@
   backdrop-filter: blur(10px);
   box-shadow: none;
   border: none;
-  width: 90%;
+  width: 99%;
   margin-left: 10px;
 }
 
@@ -51,7 +51,8 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
+  z-index: 2000;
+  position: relative;
 }
 
 .hamburger span {
@@ -131,7 +132,7 @@
   top: 100%;
   left: 0;
   transform: none;
-  background: rgba(1, 2, 5, 0.95);
+  background:rgba(30, 64, 175, 0.32);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(204, 230, 255, 0.1);
   border-radius: 8px;
@@ -154,7 +155,7 @@
   transform: rotate(45deg);
   width: 8px;
   height: 8px;
-  background: rgba(1, 2, 5, 0.95);
+  background: rgba(47, 49, 58, 0.95);
   border-left: 1px solid rgba(204, 230, 255, 0.1);
   border-top: 1px solid rgba(204, 230, 255, 0.1);
   
@@ -191,7 +192,7 @@
 .dropdown-menu a {
   padding: 0.8rem 1.5rem;
   display: block;
-  color: #555;
+  color: #fff;
   font-size: 0.95rem;
   text-align: left;
   transition: all 0.3s ease;
@@ -199,7 +200,7 @@
 
 .dropdown-menu a:hover {
   background: rgba(204, 230, 255, 0.1);
-  color: #555;
+  color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -223,7 +224,10 @@
 
   .hamburger {
     display: flex;
-    z-index: 1002;
+    z-index: 2000;
+    position: absolute;
+    right: 3rem;
+    top: 1.2rem;
   }
 
   .nav-overlay {
@@ -368,4 +372,15 @@
     width: 100%;
     max-width: none;
   }
+}
+
+.active-link {
+  background: rgba(82, 84, 88, 0.32);
+  color: #fff !important;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0.2rem 1rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: background 0.2s, color 0.2s;
 } 

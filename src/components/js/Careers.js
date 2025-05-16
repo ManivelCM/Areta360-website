@@ -133,8 +133,7 @@ const Career = () => {
               </div>
               <h3>Grow in a Diverse & Dynamic Team</h3>
               <p>
-                Our team brings together talent from various backgrounds and perspectives. We believe diversity drives creativity, innovation, and
-                better outcomes.
+                Our team brings together talent from various backgrounds and perspectives. We believe diversity drives creativity, innovation, and better outcomes.
               </p>
             </div>
 
