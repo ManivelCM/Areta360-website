@@ -165,6 +165,38 @@
     font-size: 14px;
     line-height: 1.6;
   }
+
+  .about-container {
+    overflow: visible !important;
+  }
+  .who-we-are-section,
+  .aboutus-box-text {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-box-text {
+    margin-left: 0 !important;
+    padding: 0 6px;
+    font-size: 12px;
+  }
+  .who-we-are-section {
+    padding: 1rem;
+    
+  }
+  .description-text p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .title-text {
+    font-size: 1.2rem;
+  }
+  .about-container {
+    padding-top: 30px;
+  }
+ 
 }
 
 @keyframes fadeIn {

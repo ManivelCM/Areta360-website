@@ -71,8 +71,8 @@ const Strategy = () => {
       <div className="page-content">
         <h1 className="page-title">Our Unique Selling Point</h1>
         <p className="usp-subtitle">
-          Our technology solution offers a comprehensive view of consumer behavior and support, unified cross-channel<br/>
-          strategies to deliver real-time omnichannel experiences. We are committed to creating personalized and consistent<br/>
+          Our technology solution offers a comprehensive view of consumer behavior and support, unified cross-channel
+          strategies to deliver real-time omnichannel experiences. We are committed to creating personalized and consistent
           customer interactions that make a measurable impact.
         </p>
 

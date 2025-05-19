@@ -788,4 +788,12 @@
 .blog-card-readmore-bottomright:hover {
   color: #0056b3;
   background: none;
+}
+
+@media (max-width: 600px) {
+  .blog-card {
+    margin: 0 6px 14px 0px;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+  }
 } 
