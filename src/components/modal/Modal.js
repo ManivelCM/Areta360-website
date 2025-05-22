@@ -36,7 +36,7 @@ const Modal = ({ isOpen, onClose }) => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/blog-form', {
+      const response = await fetch('https://localhost:3000/api/blog-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

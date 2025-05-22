@@ -32,9 +32,18 @@ const Footer = () => (
         <div>
           <h4>Our Location</h4>
           <ul>
-            <li>Areta360 Technologies Private Limited, 1st floor,<br />
-            Prestige Tech Park, Mercury Block, Bellandur, Bangalore South,<br />
-            Karnataka, India, 560103</li>
+            <li>
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Prestige+Tech+Park+Mercury+Block+Bellandur+Bangalore+Karnataka+560103" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={{color: '#CACBCC'}}
+              >
+                Areta360 Technologies Private Limited, 1st floor,<br />
+                Prestige Tech Park, Mercury Block, Bellandur, Bangalore South,<br />
+                Karnataka, India, 560103
+              </a>
+            </li>
             <li style={{marginTop: '6px', color: '#CACBCC', fontSize: '10px'}}>CIN: U72900KA2024PTC123456</li>
           </ul>
         </div>

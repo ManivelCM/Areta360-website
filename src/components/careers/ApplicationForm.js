@@ -46,7 +46,7 @@ const ApplicationForm = ({ isOpen, onClose }) => {
         formDataToSend.append('resume', formData.resume);
       }
 
-      const response = await fetch('http://localhost:5000/api/career-form', {
+      const response = await fetch('https://localhost:3000/api/career-form', {
         method: 'POST',
         body: formDataToSend
       });

@@ -3,7 +3,10 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
+const https = require('https');
+const fs = require('fs');
 require('dotenv').config();
+
 const app = express();
 
 // Configure multer for file upload
@@ -38,7 +41,6 @@ app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
 // Create uploads directory if it doesn't exist
-const fs = require('fs');
 if (!fs.existsSync('uploads')) {
   fs.mkdirSync('uploads');
 }
@@ -164,8 +166,24 @@ app.post('/api/blog-form', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'build')));
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+const PORT = process.env.PORT || 3000;
+
+// Create HTTPS server
+const server = https.createServer({
+  key: fs.readFileSync('key.pem'),
+  cert: fs.readFileSync('cert.pem')
+}, app);
+
+server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log('Email configuration:', {
     user: process.env.EMAIL_USER,

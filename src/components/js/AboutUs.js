@@ -30,14 +30,12 @@ const AboutUs = () => {
                 </div>
                 <div className="description-text">
                   <p>
-                    ARETA360, established in 2024 is based in the Silicon city of India, Bengaluru. We are a diverse<br/> 
-                    group of people interested in building innovative and intelligent solutions in various domains like<br/>
-                    Retail, Healthcare, Aviation and Banking and Financials etc.
-                  </p>
-                  <p>
-                    Our technology solutions offer a comprehensive view of consumer behavior and support unified,<br/> 
+                    ARETA360, established in 2024 is based in the Silicon city of India, Bengaluru. We are a diverse 
+                    group of people interested in building innovative and intelligent solutions in various domains like
+                    Retail, Healthcare, Aviation and Banking and Financials etc.<br/><br/>
+                    Our technology solutions offer a comprehensive view of consumer behavior and support unified,
                     cross-channel strategies to deliver real-time, omnichannel experiences. We're committed to 
-                    <br/>creating personalized and consistent customer interactions that make a measurable impact.
+                    creating personalized and consistent customer interactions that make a measurable impact.
                   </p>
                 </div>
               </div>
